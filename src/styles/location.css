@@ -1,0 +1,57 @@
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.map-container .rsm-geography {
+  cursor: pointer;
+  transition: fill 0.2s ease;
+}
+
+.map-container .rsm-geography:hover {
+  fill: #ff6347;
+}
+
+.composable-map {
+  max-width: 90%;
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+  .map-container {
+    margin-top: 10em;
+    height: 80vh;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .composable-map {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 50px;
+  }
+  .map-container {
+    height: 60vh;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .composable-map {
+    max-width: 100%;
+  }
+}

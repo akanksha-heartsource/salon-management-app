@@ -1,0 +1,112 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d5b9ae;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.header-title {
+  font-size: 1.5rem;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: none;
+}
+
+.book-now-link {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.book-now-link:hover {
+  color: #555;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #f0e6e4;
+  color: #333;
+}
+
+.nav-link.active {
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #d5b9ae;
+}
+
+.book-now-link {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #d5b9ae;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-nav.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.25rem;
+  }
+
+  .hamburger {
+    font-size: 1.25rem;
+  }
+
+  .header-nav a,
+  .book-now-link {
+    font-size: 1rem;
+  }
+}

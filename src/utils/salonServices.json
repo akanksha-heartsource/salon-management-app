@@ -1,0 +1,51 @@
+{
+  "Haircuts & Styling": [
+    { "serviceId": "s1", "name": "Barber Cut", "price": "$50+" },
+    { "serviceId": "s2", "name": "Short/Pixie Haircut", "price": "$70+" },
+    { "serviceId": "s3", "name": "Medium/Long Haircut", "price": "$70+" },
+    { "serviceId": "s4", "name": "Bang Trim", "price": "$15+" },
+    { "serviceId": "s5", "name": "Blowout", "price": "$50+" },
+    { "serviceId": "s6", "name": "Special Occasion Styling", "price": "$120+" },
+    { "serviceId": "s7", "name": "Global Bleaching", "price": "$350+" }
+  ],
+  "Color": [
+    { "serviceId": "s8", "name": "Gloss/Toner", "price": "$90+" },
+    { "serviceId": "s9", "name": "Grey blending", "price": "$90+" },
+    { "serviceId": "s10", "name": "Retouch", "price": "$90+" },
+    { "serviceId": "s11", "name": "Bleach Retouch", "price": "$185+" },
+    { "serviceId": "s12", "name": "Full Solid Color", "price": "$155+" },
+    { "serviceId": "s13", "name": "Partial HighLight", "price": "$185+" },
+    { "serviceId": "s14", "name": "Full HighLight", "price": "$170+" },
+    { "serviceId": "s15", "name": "Consultation", "price": "$0" }
+  ],
+  "Hair Treatment": [
+    {
+      "serviceId": "s16",
+      "name": "Botanical Repair Treatment",
+      "price": "$90+"
+    },
+    {
+      "serviceId": "s17",
+      "name": "Dry Hair Therapy Conditioning Treatment",
+      "price": "$65+"
+    },
+    { "serviceId": "s18", "name": "Brazilian Blowout", "price": "$200+" },
+    { "serviceId": "s19", "name": "Scalp Renewal Treatment", "price": "$150+" }
+  ],
+  "Skin Care": [
+    { "serviceId": "s20", "name": "30 min Facial", "price": "$105" },
+    { "serviceId": "s21", "name": "60 min Facial", "price": "$150+" },
+    { "serviceId": "s22", "name": "Plant peel treatment", "price": "$185" },
+    { "serviceId": "s23", "name": "Eye Energizing treatment", "price": "$150" }
+  ],
+  "Waxing": [
+    { "serviceId": "s24", "name": "Brow", "price": "$30" },
+    { "serviceId": "s25", "name": "Lip", "price": "$15" },
+    { "serviceId": "s26", "name": "Under", "price": "$40" },
+    { "serviceId": "s27", "name": "Chest", "price": "$60" },
+    { "serviceId": "s28", "name": "Stomach", "price": "$30" },
+    { "serviceId": "s29", "name": "Half Arm", "price": "$15" },
+    { "serviceId": "s30", "name": "Full Arm", "price": "$50" },
+    { "serviceId": "s31", "name": "Half Legs", "price": "$60" }
+  ]
+}

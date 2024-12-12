@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import Location from "./Components/Location";
+import StatePage from "./Components/StatePage";
+import BookingSidebar from "./Components/BookingSidebar";
 
-function App() {
+const App = () => {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState(null);
+
+  const openBookingSidebar = (location) => {
+    setSelectedLocation(location);
+    setIsBookingOpen(true);
+  };
+
+  const closeBookingSidebar = () => {
+    setIsBookingOpen(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header openBooking={openBookingSidebar} />
+      <div className={isBookingOpen ? "blurred" : ""}>
+        <Routes>
+          <Route path="/" element={<Home onBookNow={openBookingSidebar} />} />
+          <Route path="/home" element={<Navigate to="/" />} />
+          <Route path="/location" element={<Location />} />
+          <Route
+            path="/state/:stateId"
+            element={
+              <StatePage
+                openBooking={openBookingSidebar}
+                selectedLocation={selectedLocation}
+                setSelectedLocation={setSelectedLocation}
+              />
+            }
+          />
+        </Routes>
+      </div>
+      {isBookingOpen && (
+        <BookingSidebar
+          onClose={closeBookingSidebar}
+          preselectedLocation={selectedLocation}
+        />
+      )}
+    </Router>
   );
-}
+};
 
 export default App;

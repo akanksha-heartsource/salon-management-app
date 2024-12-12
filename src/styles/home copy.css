@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Gotu&display=swap");
+body {
+  font-family: "Gotu", sans-serif;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f9;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-image: url("../../public/Images/background1.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5em 2em;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 2;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+button {
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.book-now {
+  background-color: #e91e63;
+  color: white;
+}
+
+.book-now:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+}
+
+.locations {
+  background-color: #ffc107;
+  color: white;
+}
+
+.locations:hover {
+  background-color: #ffb300;
+  transform: scale(1.05);
+}

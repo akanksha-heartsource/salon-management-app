@@ -1,0 +1,68 @@
+.state-location-selection {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.state-item {
+  margin-bottom: 15px;
+}
+
+.state-header {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.state-header span {
+  font-size: 18px;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: #888;
+}
+
+.stateName span {
+  color: black;
+  font-weight: bold;
+}
+.stateName span:hover {
+  color: rgb(47, 161, 206);
+  font-weight: bold;
+}
+
+.arrow span {
+  color: gray;
+}
+.arrow span:hover {
+  color: rgb(47, 161, 206);
+}
+
+.location-item {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.location-item:hover {
+  color: rgb(47, 161, 206);
+  cursor: pointer;
+}
+
+.headerLoc {
+  background-color: rgb(245, 140, 140);
+  border-radius: 5px;
+  color: black;
+}
+
+.location-item.selected-location {
+  background-color: #d1e8f7;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
